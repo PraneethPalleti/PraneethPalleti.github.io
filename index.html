@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Praneeth Palleti - Portfolio">
+    <title>Praneeth Palleti - Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications-section">Certifications</a></li>
+        </ul>
+        <div id="underline"></div>
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="http://github.com/PraneethPalleti" target="_blank" aria-label="GitHub" data-tooltip="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/praneethpalleti/" target="_blank" aria-label="LinkedIn" data-tooltip="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:praneeth.palleti@gmail.com" aria-label="Email" data-tooltip="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </nav>
+
+    <div id="particles-js"></div>
+    <canvas id="interactiveCanvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Add this in the <head> section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js"></script>
+    <script src="script.js"></script>
+<!-- Hero Section -->
+<section id="hero">
+    <div class="profile-pic">
+        <img src="profile.png" alt="Praneeth Palleti Portrait">
+    </div>
+    <h1 class="animated-title" id="typing-text" aria-label="Hi, I Am Praneeth Palleti..."></h1>
+    <p class="subtitle">Transforming Data into Strategic Decisions 💡</p>
+    <a href="resume_F.pdf" download class="resume-btn">Download Resume</a>
+</section>
+
+
+<!-- About Me Section -->
+<section id="about-me">
+    <h2 class="section-title">Get to Know Me</h2>
+    <div class="about-me-content">
+      <!-- Animation Container -->
+      <!-- <div id="hi-animation"></div> -->
+      <!-- Text Content -->
+      <div class="about-me-text">
+        <div id="hi-animation">
+            <img src="images/bit-pranee-unscreen.gif" alt="Hi Animation">
+        </div>
+        <p>
+          From childhood, my curiosity pushed me to explore—be it technology, games, or the hidden logic behind everyday patterns. Over time, this turned into a passion for decoding complexities, uncovering trends, and solving problems. This natural inclination led me to pursue a Master's in Data Science, where I now transform raw data into compelling narratives and intelligent solutions.
+        <p>    
+        </div>
+    </div>
+  </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">My Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <img src="images/study.png" alt="Narayana Logo" class="logo-img">
+                </div>
+                <div class="timeline-content">
+                    <h3>Narayana Jr College</h3>
+                    <p class="timeline-date">2017 - 2019</p>
+                    <p class="timeline-description">MPC (Maths, Physics, Chemistry)</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <img src="images/grad.png" alt="Presidency University Logo" class="logo-img">
+                </div>
+                <div class="timeline-content">
+                    <h3>Presidency University</h3>
+                    <p class="timeline-date">2019 - 2023</p>
+                    <p class="timeline-description">Bachelor's in Computer Science</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <img src="images/grad.png" alt="Data Science Logo" class="logo-img">
+                </div>
+                <div class="timeline-content">
+                    <h3>University At Buffalo</h3>
+                    <p class="timeline-date">2023 - 2024</p>
+                    <p class="timeline-description">Masters in Data Science</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="chart-container">
+            <canvas id="skillsRadarChart"></canvas>
+        </div>
+
+    <div class="skills-grid">
+      <!-- Database Card -->
+      <div class="skill-card">
+        <h3 class="skill-title">Databases</h3>
+        <p class="skill-description">Proficient in managing and querying relational and NoSQL databases for efficient data storage and retrieval.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">SQLite</span>
+        </div>
+      </div>
+  
+      <!-- Data Visualization Card -->
+      <div class="skill-card">
+        <h3 class="skill-title">Data Visualization</h3>
+        <p class="skill-description">Experienced in creating interactive and insightful visualizations to communicate data-driven insights.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Plotly</span>
+          <span class="skill-tag">Matplotlib</span>
+        </div>
+      </div>
+  
+      <!-- ETL Pipelines Card -->
+      <div class="skill-card">
+        <h3 class="skill-title">ETL Pipelines</h3>
+        <p class="skill-description">Skilled in designing and implementing ETL pipelines for data integration and transformation.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Apache Airflow</span>
+          <span class="skill-tag">Talend</span>
+          <span class="skill-tag">Informatica</span>
+          <span class="skill-tag">AWS Glue</span>
+        </div>
+      </div>
+  
+      <!-- Machine Learning Card -->
+      <div class="skill-card">
+        <h3 class="skill-title">Machine Learning</h3>
+        <p class="skill-description">Proficient in building and deploying machine learning models for predictive analytics and decision-making.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Scikit-Learn</span>
+          <span class="skill-tag">Keras</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">PyTorch</span>
+          
+          <span class="skill-tag">XGBoost</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3 class="skill-title">Data Lifecycle Management</h3>
+        <p class="skill-description">Expertise in cleaning, organizing, and managing data for efficient analysis and storage.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Data Cleaning</span>
+          <span class="skill-tag">Data Warehousing</span>
+          <span class="skill-tag">Data Modeling</span>
+          <span class="skill-tag">Data Mining</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="nlp">NLP</button>
+            <button class="filter-btn" data-filter="viz">Visualization</button>
+        </div>
+        <div class="project-grid"></div>
+    </section>
+<!-- Certifications Section -->
+<section id="certifications-section">
+    <h2 class="section-title">My Certifications</h2>
+    <div class="certifications-container">
+        <!-- Accenture Certification -->
+        <div class="certification-item">
+            <img src="images/Accenture North America.png" alt="Accenture Logo" class="certification-logo">
+            <h3 class="certification-title">Accenture North America - Data Analytics and Visualization Job Simulation</h3>
+            <p class="certification-description">
+                This program covered key areas like project understanding, data cleaning & modeling, visualization & storytelling, and client presentations.
+            </p>
+            <p class="certification-details">
+                Issued Dec 2024 | Credential ID: HoAWmCZPDs7XaRKQm
+            </p>
+        </div>
+
+        <!-- BCG Certification -->
+        <div class="certification-item">
+            <img src="images/BCG-Logo1.png" alt="BCG Logo" class="certification-logo">
+            <h3 class="certification-title">BCG - GenAI Job Simulation</h3>
+            <p class="certification-description">
+                A job simulation program focused on Generative AI applications.
+            </p>
+            <p class="certification-details">
+                Issued Sep 2024 | Credential ID: nNJd94Cj27T67uoLY
+            </p>
+        </div>
+
+        <!-- Goldman Sachs Certification -->
+        <div class="certification-item">
+            <img src="images/Goldman_Sachs.svg.png" alt="Goldman Sachs Logo" class="certification-logo">
+            <h3 class="certification-title">Goldman Sachs - Software Engineering Job Simulation</h3>
+            <p class="certification-description">
+                A hands-on simulation covering software engineering principles and practices.
+            </p>
+            <p class="certification-details">
+                Issued Sep 2024 | Credential ID: BziWpy3dhCqwJ3ZmS
+            </p>
+        </div> 
+
+        <!-- Macquarie University Certification -->
+        <div class="certification-item">
+            <img src="images/Macquarie-University-Logo.png" alt="Macquarie University Logo" class="certification-logo">
+            <h3 class="certification-title">Excel Fundamentals for Data Analysis</h3>
+            <p class="certification-description">
+                A course focused on mastering Excel for data analysis tasks.
+            </p>
+            <p class="certification-details">
+                Issued Feb 2024 | Expired Feb 2024 | Credential ID: PA96FV6DVD8W
+            </p>
+        </div>
+    </div>
+</section>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+
+<!-- Add this to your footer in index.html -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> Praneeth Palleti -  All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Dynamic Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+
+</html>
